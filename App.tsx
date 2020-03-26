@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 
-import React, {useEffect} from 'react';
+import React from 'react';
 import firebase from '@react-native-firebase/app';
 import '@react-native-firebase/messaging';
 import PushNotification from 'react-native-push-notification';
-import {Platform, PushNotificationIOS} from 'react-native';
+import {Platform} from 'react-native';
 import {FirebaseMessagingTypes} from '@react-native-firebase/messaging';
 
 const App = () => {
