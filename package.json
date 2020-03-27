@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@react-native-community/push-notification-ios": "^1.1.0",
-    "@react-native-firebase/app": "6.4.0-rc2",
-    "@react-native-firebase/messaging": "6.4.0-rc2",
+    "@react-native-firebase/app": "6.4.0-rc4",
+    "@react-native-firebase/messaging": "6.4.0-rc4",
     "@types/react-native-push-notification": "^3.0.8",
     "react": "16.9.0",
     "react-native": "0.61.5",

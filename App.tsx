@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-
 import React from 'react';
 import firebase from '@react-native-firebase/app';
 import '@react-native-firebase/messaging';
