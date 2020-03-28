@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import firebase from '@react-native-firebase/app';
 import '@react-native-firebase/messaging';
 import PushNotification from 'react-native-push-notification';
 import {Platform} from 'react-native';
 import {FirebaseMessagingTypes} from '@react-native-firebase/messaging';
+import PushNotificationIOS from '@react-native-community/push-notification-ios';
 
 const App = () => {
   const getToken = () => {
@@ -29,10 +30,8 @@ const App = () => {
     firebase
       .messaging()
       .requestPermission()
-      .then((status: FirebaseMessagingTypes.IOSAuthorizationStatus) => {
-        if (
-          status === FirebaseMessagingTypes.IOSAuthorizationStatus.AUTHORIZED
-        ) {
+      .then((status: FirebaseMessagingTypes.AuthorizationStatus) => {
+        if (status === 1) {
           console.log('Authorized');
           onMessage();
         } else {
@@ -44,15 +43,13 @@ const App = () => {
 
   const onMessage = () => {
     firebase.messaging().onMessage(response => {
-      showNotification(response.notification!);
+      showNotification(response.data!.notification);
     });
   };
 
-  const showNotification = (
-    notification: FirebaseMessagingTypes.Notification,
-  ) => {
+  const showNotification = (notification: any) => {
     console.log('Showing notification');
-    console.log(JSON.stringify(PushNotification));
+    console.log(JSON.stringify(notification));
     PushNotification.localNotification({
       title: notification.title,
       message: notification.body!,
@@ -65,6 +62,20 @@ const App = () => {
   } else {
     onMessage();
   }
+
+  // PushNotification.localNotification({
+  //   title: 'ads',
+  //   message: 'asd',
+  // });
+
+  // useEffect(
+  //   () =>
+  //     PushNotificationIOS.presentLocalNotification({
+  //       alertTitle: 'title',
+  //       alertBody: 'body',
+  //     }),
+  //   [],
+  // );
   return <></>;
 };
 

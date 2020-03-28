@@ -969,24 +969,24 @@
   dependencies:
     invariant "^2.2.4"
 
-"@react-native-firebase/app-types@6.4.0-rc2":
-  version "6.4.0-rc2"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app-types/-/app-types-6.4.0-rc2.tgz#932f1a0f1274e306f70ddfa1b4c1a8d7e3f45199"
-  integrity sha512-P/R+tmUr79rC7UUOMano3qLmH14VDiABLmCsMbXbp7cIkcwQaOdjytx7Ob77EFUEhJ+j6JhGeAq2F6TQQXxl9g==
+"@react-native-firebase/app-types@6.4.0-rc4":
+  version "6.4.0-rc4"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app-types/-/app-types-6.4.0-rc4.tgz#26fe5ff160669bcfaa44fddcfc581885bc0d3efd"
+  integrity sha512-4eowkeptP1Qga6wKDHWbdCH3zt6UnazPs9tN4jhSwlxtOWKOf9PEhiToszo114EZJBWObWPseIgU8C4+Nr/jyg==
 
-"@react-native-firebase/app@6.4.0-rc2":
-  version "6.4.0-rc2"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-6.4.0-rc2.tgz#44715e043df5492ed3a280064d75afa08882af11"
-  integrity sha512-plC04jcY0G7bdSO6bumSgykH/W5eZ+I5PESJ17JHr2gPtlIxntosj1KMtSeZj93irbmV/fZGiGQ0P4NFD6vHLg==
+"@react-native-firebase/app@6.4.0-rc4":
+  version "6.4.0-rc4"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-6.4.0-rc4.tgz#0ba2505021dd0c75e71244be7c30ba2bf219b003"
+  integrity sha512-nsAUkJmooUHTEdUj6+IXUcXN+xsT2XPYFSIeCzzUkuvfDcD84YY3wmxjRtS1Jmg6+D/y6B/fWbM/SPgYH7MrGQ==
   dependencies:
-    "@react-native-firebase/app-types" "6.4.0-rc2"
+    "@react-native-firebase/app-types" "6.4.0-rc4"
     opencollective-postinstall "^2.0.1"
     superstruct "^0.6.2"
 
-"@react-native-firebase/messaging@6.4.0-rc2":
-  version "6.4.0-rc2"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/messaging/-/messaging-6.4.0-rc2.tgz#de41b178a61c7a0762bd31c888dcb5ce4d2afe3e"
-  integrity sha512-qaaKdnBNhHRcFKjyszdY8ua8LyCCYr7pT0CVmiZIu6e0EdxPWz2k1E7hhcJeYAfenrS3bZeTWm4UMq3lbeHj5g==
+"@react-native-firebase/messaging@6.4.0-rc4":
+  version "6.4.0-rc4"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/messaging/-/messaging-6.4.0-rc4.tgz#4569280326c8830712a6902ebc60b628cbe1c4b7"
+  integrity sha512-TZkOTAm8QAQZ2FGtL7JfXnQTxO8QFro/ljkow9uFwqQJY9El09wyaQyHrRyZKzZLrwLXIBvEdu9aamqgHDbenQ==
 
 "@types/babel__core@^7.1.0":
   version "7.1.6"
